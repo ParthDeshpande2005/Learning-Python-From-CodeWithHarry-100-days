@@ -22,7 +22,7 @@ print(sqrt(25))
 
 
 #%%
-# 'as' keyword is used to get in short
+# 'as' keyword is used to assign a variable to our inputs
 import math as m
 result=m.sqrt(9)*m.pi
 print(result)

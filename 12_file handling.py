@@ -1,6 +1,6 @@
 #%%
 #read a file
-f=open('myfile.txt','r')#(name of file,mode to open file)
+f=open('12.1_myfile.txt','r')#(name of file,mode to open file)
 print(f) #output=name of file and the mode it is opened in
 text=f.read()
 print(text)

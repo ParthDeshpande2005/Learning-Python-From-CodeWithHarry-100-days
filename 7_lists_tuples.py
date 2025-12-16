@@ -47,6 +47,7 @@ l.reverse()#reverse kar dega
 print(l1.index(32))#gives index of first occurance
 print(l1.count(32))#used to count number of occurance in list
 l.insert(1,977)#insert 977 at index 1
+print(l)
 
 #imp!to make copy allways use this copy function or original list get changed 
 m=l.copy()
