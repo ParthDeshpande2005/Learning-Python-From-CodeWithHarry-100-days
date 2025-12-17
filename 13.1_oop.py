@@ -141,7 +141,7 @@ class student:
 a=student("parth")
 #we can access private by->
 #we use indirect access
-print(a._student__name)#we can access private by (variable._class__name)
+print(a._student__name)#we can access private by (variable._class__name) this is known as name mangling.
 #(a.__name) will give error->as cant be accessed directly
 print(a.__dir__())#gives all the method we can use in class student
 
@@ -166,6 +166,3 @@ print(b._name)
 print(b._funname())
 
 
-# %%
-
-# %%

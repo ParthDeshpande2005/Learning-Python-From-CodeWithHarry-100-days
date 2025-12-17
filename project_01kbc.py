@@ -23,7 +23,7 @@ Prize=["0k","1k","2k","3k","5k","10k","20k","40k","80k","160k","320k","640k","12
 print("WELCOME TO KBC".center(150))
 
 for i in range (16):
-   if(i/5==1 or i/5==2 or i/5==3):
+   if(i/5==1 or i/5==2 or i/5==3):#can also use i%5==0
             print("You have reach a checkpoint.If any answer is wrong until next check point you will recive the checkpoint prize.which is",Prize[i])
    print("Your",i+1,"question is on screen")
    print(i+1,".",Questions[i])
