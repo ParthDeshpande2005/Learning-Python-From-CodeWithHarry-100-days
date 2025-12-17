@@ -50,7 +50,7 @@ while True:
 
 # %%
 #readline()
-f=open('myfile.txt',"r")
+f=open('12.1_myfile.txt',"r")
 i=0
 while True:
     i=i+1
@@ -89,6 +89,7 @@ with open('12.3_myfile3.txt','r') as f:
     print(f.tell()) #tell() returns the current position within the file
 
 
+
 # %%
 #truncate()
 #this method cant't be used in read'r' mode it must be used in  'w' or 'a' mode
@@ -102,4 +103,3 @@ with open('12.4_myfile4.txt','r') as f:
     print(f.read())
 
 
-# %%

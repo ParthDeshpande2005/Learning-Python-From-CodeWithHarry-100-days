@@ -3,7 +3,7 @@ class student:
     name="parth"
     rollno=23
     branch="SCOPE"
-    def info(self):
+    def info(self):#self vo object hota hai jis par method call hota hai.
         print(f"{self.name} is a student from {self.branch}")
 #self parameter are reference to current instance of the class
 a=student()
@@ -21,6 +21,8 @@ b.info()
 #constructor->used to initalize values.__init__ is a constructor
 class person:
     def __init__(self,name,o):#n,o are arugument we need to give when we call the class
+        #__init__(self)-> default constructor
+        #__init__(self,ad,f,..)-> parameterized constructor
         print("hey I am a person")
         self.name=name
         self.occ=o
@@ -28,7 +30,7 @@ class person:
         print(f"{self.name} is a {self.occ}")
 
 a=person("harry","developer")#self automatically pass hota hai baki do hame karna padte hai
-b=person("parth","HR")
+b=person("parth","nithala")
 a.info()
 b.info()
 
@@ -43,6 +45,7 @@ def greet(fx):
         fx()
         print("thanks for using this function")
     return mfx  
+#Always ensure your decorator returns a function. If you forget the return, the decorated function becomes None.
     
 @greet
 def hello():
