@@ -14,7 +14,9 @@ print(a.name,a.branch)
 
 a.info()
 b.info()
-
+#or
+student.info(a)
+student.info(b)
 
 
 # %%

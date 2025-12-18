@@ -1,13 +1,12 @@
 # #%%
-# for thking varables as instance
+# for taking varables as instance
 class lib:
     def __init__(self):
         self.no=0
         self.books=[]
-#and so on
-
+#and so on...
+#or
 #%%
-#here i have taken variables as class variables
 class library:
     def __init__(self,books,no_books):
         self.no_books=no_books
