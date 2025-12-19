@@ -12,7 +12,7 @@ b.name="ram"
 b.branch="SAI"
 print(a.name,a.branch)
 
-a.info()
+a.info() #python converts a.info() to-->student.info(a)
 b.info()
 #or
 student.info(a)

@@ -53,3 +53,51 @@ print(Employee.companyName)
 
 
 # %%
+#Class Methods 
+
+class Employee:
+    company="Apple"
+    def show(self):
+        print(f"The name is {self.name} and company is {self.company}")
+
+    @classmethod#->ye method class pe apply hoga naki instance pe
+    #without @classmethod ye method instance pe apply hoga
+    def changecompany(anything, newcompany):#yaha anithing ke jagha self bhi aa skta hai
+        anything.company=newcompany
+
+e1=Employee()
+e1.name="Parth"
+e1.show()
+e1.changecompany("Infinty")
+e1.show()
+print(Employee.company)
+
+#standard-->
+# @classmethod
+# def changecompany(cls, newcompany):
+#     cls.company = newcompany
+
+
+
+# %%
+#Class Method as Alternative Constructors
+
+class employee:
+    def __init__(self,name,salary):
+        self.name=name
+        self.salary=salary
+    
+    @classmethod
+    def fromStr(cls,string):
+        return cls(string.split("-")[0],int(string.split("-")[1]))
+    #is class method mai string input leke hum instance ka name aur salary return kar rahe hai
+
+#used when the input is some other form like string
+string="Parth-7777777"
+e1=employee.fromStr(string)
+print(e1.name)
+print(e1.salary)
+
+
+
+# %%
