@@ -101,3 +101,64 @@ print(e1.salary)
 
 
 # %%
+
+# dir
+x=[1,3,2]
+print(dir(x))#list ke sare method print hoge
+print(x.__add__)
+
+#__dict__
+class Person:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    
+p=Person("John",30)
+print(p.__dict__)
+
+#help() Method
+print(help(Person))
+
+
+
+# %%
+
+#Super Keyword
+#jab hame child class mai parent class ka method call karna hota hai tab hum super keyword ka use karte hai
+
+class ParentClass:
+    def parent_method(self):
+        print("This is the parent Method1")
+
+class ChildClass(ParentClass):
+    # def parent_method(self):
+    #     print("Parth")
+    #     super().parent_method()
+    def chil_method(self):
+        print("This is the child method")
+        super().parent_method()
+
+child_obj=ChildClass()
+child_obj.chil_method()
+child_obj.parent_method()#agar child class mai is nam ka method hoga to parent class wale ko call karega
+
+
+#constructor ko call karna super ke use se
+class Employee:
+    def __init__(self,name,id):
+        self.name=name
+        self.id=id
+    
+class Programmer(Employee):
+    def __init__(self,name,id,lang):
+        super().__init__(name,id)
+        self.lang=lang
+
+parth=Programmer("parth","23bce","python")
+print(parth.name)
+print(parth.id)
+print(parth.lang)
+
+
+
+# %%
