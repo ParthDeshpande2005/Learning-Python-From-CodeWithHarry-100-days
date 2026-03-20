@@ -66,7 +66,7 @@ b="Hello Guys welcome to India"
 print(b.endswith("a"))
 print(b.endswith("lo",2,5)) #<-taking range to check endswith
 
-print(b.find("hello")) #will find the first apperence of Hello
+print(b.find("Hello")) #will find the first apperence of Hello
 #find will give output as -1 if string is not found.
 print(b.index("to")) #index will give error of string is not found
 

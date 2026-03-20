@@ -32,7 +32,7 @@ class person:
         print(f"{self.name} is a {self.occ}")
 
 a=person("harry","developer")#self automatically pass hota hai baki do hame karna padte hai
-b=person("parth","nithala")
+b=person("parth","cook")
 a.info()
 b.info()
 

@@ -100,3 +100,12 @@ print(0 and 6) #output=0
 
 
 # %%
+a=20
+b=20
+print(a&b)
+print(a|b)
+print(a^b)
+print(~a)
+
+
+

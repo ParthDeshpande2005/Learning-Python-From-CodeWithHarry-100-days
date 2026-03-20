@@ -78,7 +78,7 @@ print(answer)
 
 #harry code better hai kyu ki har bar 0 ko check nahi karega
 def fac(k):
-    if(k==0 or k==1):#here there is no need to write k==0 as that condition will never be checked.
+    if(k==0 or k==1):
         return 1
     else:
         return k * fac(k-1)

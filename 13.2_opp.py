@@ -159,6 +159,4 @@ print(parth.name)
 print(parth.id)
 print(parth.lang)
 
-
-
 # %%

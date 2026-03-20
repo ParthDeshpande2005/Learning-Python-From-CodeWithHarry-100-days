@@ -17,6 +17,7 @@ rb:read,open as binary file
 '''
 
 
+
 #%%
 #write in file
 f1=open('myfile.txt','w')
@@ -24,11 +25,13 @@ f1.write("hello world!")
 f1.close()
 
 
+
 # %%
 #append in file
 f2=open('myfile.txt','a')
 f2.write("hello using append")
 f2.close()
+
 
 
 # %%
@@ -39,6 +42,7 @@ with open('myfile.txt','r') as f:
     print(text1)
 
 
+
 # %%
 #readline() method
 f=open('myfile.txt','r')
@@ -47,6 +51,8 @@ while True:
     if not line:
         break
     print(line)
+
+
 
 # %%
 #readline()
@@ -64,7 +70,8 @@ while True:
     print(f"marks of student {i} in SST is: {m2}")
     print(f"marks of student {i} in science is: {m3}")
 
-    
+
+
 # %%
 #writeline() method
 
@@ -74,10 +81,11 @@ f.writelines(lines)#or use f.write(line+'\n') if \n is not included in string
 f.close()
 
 
+
 # %%
 #seek() and tell()
 #=>are used to work with file objects and thier positions within a file
-with open('12.3_myfile3.txt','r') as f:
+with open('12.3_myfile3.txt','r') as f:#no need to close when using with to open file.
     print(type(f))
     f.seek(10) #move to 10th byte in file
 
@@ -87,6 +95,7 @@ with open('12.3_myfile3.txt','r') as f:
 #the position is specified in byte then you can move forward or backward from current position
 
     print(f.tell()) #tell() returns the current position within the file
+
 
 
 
