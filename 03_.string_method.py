@@ -1,5 +1,5 @@
 #%%
-#strings
+#strings-> Immutable (individual characters can't be changed)
 a="parth" 
 print(len(a))
 b='deshpande' #<--also a string using ''
@@ -41,7 +41,7 @@ print(name[-1])
 #negative slicing
 print(name[0:-4]) #-->print(name[0:len(name)-4])
 print(name[-5:-2]) #-->print(name[len(name)-5:len(name)-2])
-
+print(name[::-1]) #reverse the string
 
 
 #%%

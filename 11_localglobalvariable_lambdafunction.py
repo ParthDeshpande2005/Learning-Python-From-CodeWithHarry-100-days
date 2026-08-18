@@ -15,7 +15,7 @@ print(x) #will print the new value of x
 
 
 #%%
-#lambda function
+#lambda function-->The keyword that initiates the anonymous function.
 def double(x):
     return x*2
 #this can be writen as :

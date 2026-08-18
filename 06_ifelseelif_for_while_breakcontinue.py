@@ -120,6 +120,7 @@ else:
     print("while ka else")#else execute nahi hoga kyu ki while loop break hoga
 
 #else gets printed if loops complete or does not get started.
+#else does not get printed if loop breaks.
 
 
 
@@ -128,7 +129,7 @@ else:
 i=0
 while(i<=3):
     print(i)
-    i=i+1
+    i=i+1 #base case
 
 print("")
 
@@ -142,6 +143,7 @@ else:print("inside else")
 
 
 #%%
+#python does not have a build in do while loop.
 #do while loop
 i=0
 while True:

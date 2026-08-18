@@ -65,7 +65,7 @@ print(k)
 #tuples->immutable
 tup=(1,2,3,3,3,4,5)
 print(type(tup),tup)
-nottup=(1)
+nottup=(1) #this is int data type.
 print(type(nottup),nottup)
 istup=(1,) #use comma to define as tuple
 print(type(istup),istup)
@@ -127,7 +127,7 @@ print(newl)
 #using map function
 newl2=list(map(cube,l))
 print(newl2)
-#using lambda
+#using lambda->The keyword that initiates the anonymous function.
 newl2=list(map(lambda x:x*x*x,l))
 #list is used to convert to list or we will get map object.
 

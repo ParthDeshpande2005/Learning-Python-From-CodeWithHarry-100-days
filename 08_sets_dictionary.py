@@ -1,6 +1,6 @@
 #%%
-#sets-are unordered collection of data items
-#sets are unchangable
+#sets-are unordered collection of data items and store only unique elements.
+#sets are immutable
 s={1,2,3,2,4}
 print(s)
 
@@ -78,7 +78,7 @@ for key,value in dic.items():
 # %%
 # Dictionary Methods
 
-dic1={1:[90,24],(2,3):95,3:78,4:100} #we can use list at teh place of value.and tupple for key.
+dic1={1:[90,24],(2,3):95,3:78,4:100} #we can use list at the place of value.and tupple for key.
 dic2={5:60,8:85}
 
 dic1.update(dic2)

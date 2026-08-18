@@ -69,7 +69,7 @@ b="4"
 print(a is b)#checks exact location of object in memory
 print(a==b)#checks value
 print("")
-""" python will create differnt location for same list as the are iterable"""
+""" python will create differnt location for same list as they are iterable"""
 a1=[1,2,3]
 b1=[1,2,3]
 print(a1 is b1)
@@ -108,4 +108,9 @@ print(a^b)
 print(~a)
 
 
+print(10/3)
+print(10//3)
+print(10%3)
 
+
+# %%
